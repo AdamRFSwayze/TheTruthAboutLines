@@ -1,12 +1,16 @@
 %Packages
 \usepackage{graphicx}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{mathptmx}
 \usepackage{titletoc}
 \usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{amsthm}
-\usepackage{titlesec}
+\usepackage[explicit]{titlesec}
+\usepackage{tikz}
+
+
+
 
 %Setting Images Directory
 \graphicspath{{Images/}}
@@ -38,9 +42,27 @@
 %Page Headers
 
 
-
-
 %Chapter Heading
+
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Huge\bfseries}
+  {\gdef\chapterlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-2.9cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=Plum] (0,0) rectangle
+          (\paperwidth,3cm);
+        \node[anchor=east,xshift=.9\paperwidth,yshift=1cm, rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=blue]
+              {\color{black}\chapterlabel#1};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{0pt}{30pt}{10pt}
 
 
 
