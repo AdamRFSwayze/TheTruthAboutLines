@@ -1,0 +1,49 @@
+%Packages
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage{titletoc}
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsthm}
+\usepackage{titlesec}
+
+%Setting Images Directory
+\graphicspath{{Images/}}
+
+
+%Editing the Table of Contents
+
+\contentsmargin{0cm}
+
+\titlecontents{part}[1cm]
+{\vspace{20pt}\large\bfseries}  %above the entry
+{\color{blue}\contentslabel[\Large\thecontentslabel]{1cm}\color{red}} %numbered entry format
+{\color{green}}  %Numberless entry format
+{\color{red}\hrule} %after the entry
+
+\titlecontents{chapter}[1cm]
+{\vspace{20pt}\large\bfseries}  %above the entry
+{\color{blue}\contentslabel[\Large\thecontentslabel]{1cm}\color{red}} %numbered entry format
+{\color{green}}  %Numberless entry format
+{\color{red}\hrule} %after the entry
+
+\titlecontents{section}[2.2cm]
+{\vspace{2pt}}  %above entry
+{\color{black}\contentslabel[\Large\thecontentslabel]{1cm}\color{black}} %numbered entry format
+{}
+{\titlerule*[.5pc]{.}\thecontentspage} %after the entry
+
+
+%Page Headers
+
+
+
+
+%Chapter Heading
+
+
+
+%New Theorems
+\newtheorem{prblm}{Problem}
+\newtheorem{defn}{Definition}
