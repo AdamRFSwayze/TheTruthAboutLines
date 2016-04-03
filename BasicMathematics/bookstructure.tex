@@ -16,6 +16,12 @@
 \graphicspath{{Images/}}
 
 
+
+%Defining Colors
+\definecolor{pinkish}{RGB}{255, 220, 220}
+\definecolor{turquoise}{RGB}{0,200,200}
+\definecolor{TarletonPurple}{RGB}{79,45,127}
+
 %Editing the Table of Contents
 
 \contentsmargin{0cm}
@@ -49,23 +55,31 @@
   {\gdef\chapterlabel{}
    \normalfont\sffamily\Huge\bfseries}
   {\gdef\chapterlabel{\thechapter\ }}{0pt}
-  {\begin{tikzpicture}[remember picture,overlay]
-    \node[yshift=-2.9cm] at (current page.north west)
+  {\begin{tikzpicture}[remember picture, overlay]
+    \node[yshift=-8cm] at (current page.north west)
       {\begin{tikzpicture}[remember picture, overlay]
-        \draw[fill=Plum] (0,0) rectangle
-          (\paperwidth,3cm);
-        \node[anchor=east,xshift=.9\paperwidth,yshift=1cm, rectangle,
-              rounded corners=20pt,inner sep=11pt,
-              fill=blue]
+        \draw[fill=TarletonPurple] (0,0) rectangle
+          (\paperwidth,8cm);
+        \draw[anchor=east] node [xshift=.9\paperwidth,yshift=0cm, rectangle,
+              rounded corners=20pt,inner sep=11pt, draw=black,
+              fill=white]
               {\color{black}\chapterlabel#1};
        \end{tikzpicture}
       };
    \end{tikzpicture}
   }
-\titlespacing*{\chapter}{0pt}{30pt}{10pt}
-
+\titlespacing*{\chapter}{0pt}{40pt}{130pt}
 
 
 %New Theorems
 \newtheorem{prblm}{Problem}
 \newtheorem{defn}{Definition}
+\newenvironment{boxed}
+	{\begin{center}
+	\begin{tabular}{|p{0.9 \textwidth}|}
+	\hline\\
+	}{
+	\\ \hline 	
+	\end{tabular}
+	\end{center}
+	}
