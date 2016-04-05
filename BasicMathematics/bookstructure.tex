@@ -1,16 +1,28 @@
 %Packages
 \usepackage{graphicx}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{mathptmx}
 \usepackage{titletoc}
 \usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
 \usepackage{fancyhdr}
-\usepackage{amsthm}
-\usepackage{titlesec}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[explicit]{titlesec}
+\usepackage{tikz}
+\usepackage{mdframed}
+\usepackage{wrapfig}
+\usepackage{hyperref}
 
 %Setting Images Directory
 \graphicspath{{Images/}}
 
+
+
+%Defining Colors
+\definecolor{pinkish}{RGB}{255, 220, 220}
+\definecolor{turquoise}{RGB}{0,200,200}
+\definecolor{TarletonPurple}{RGB}{79,45,127}
+\definecolor{LightBlue}{RGB}{130,240,240}
+\definecolor{defnGreen}{RGB}{204,255,229}
 
 %Editing the Table of Contents
 
@@ -38,12 +50,155 @@
 %Page Headers
 
 
-
-
 %Chapter Heading
 
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Huge\bfseries}
+  {\gdef\chapterlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture, overlay]
+    \node[yshift=-8cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=TarletonPurple] (0,0) rectangle
+          (\paperwidth,8cm);
+        \draw[anchor=east] node [xshift=.9\paperwidth,yshift=0cm, rectangle,
+              rounded corners=20pt,inner sep=11pt, draw=black,
+              fill=white]
+              {\color{black}\chapterlabel#1};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{0pt}{40pt}{130pt}
+
+%New Commands
+
+
+
+%New Theorem Styles
+
+\newtheoremstyle{blacknumbered}% Theorem style name
+{5pt}% Space above
+{5pt}% Space below
+{\normalfont}% Body font
+{0pt} % Indent amount
+{\Large\bf\sffamily}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+%Frames for Environments
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=true,
+leftline=true,
+topline=false,
+bottomline=false,
+backgroundcolor=defnGreen,
+linecolor=red,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=8pt]{presdefnbox}
+
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+backgroundcolor=cyan,
+linecolor=red,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=10pt]{presexmplbox}
+
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=false,
+topline=false,
+bottomline=false,
+backgroundcolor=cyan,
+linecolor=red,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=10pt]{exmplbox}
+
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=false,
+topline=false,
+bottomline=false,
+backgroundcolor=defnGreen,
+linecolor=red,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=8pt]{defnbox}
 
 
 %New Theorems
+\theoremstyle{blacknumbered}
 \newtheorem{prblm}{Problem}
+\newtheorem{exmpl}{Example}
+\theoremstyle{definition}
 \newtheorem{defn}{Definition}
+
+
+
+%New Environments
+\newenvironment{pres_defn}
+	{\begin{presdefnbox}
+	\begin{defn}}
+	{\end{defn}
+	\end{presdefnbox}}
+
+\newenvironment{pres_exmpl}
+	{\begin{presexmplbox}
+	\begin{exmpl}}
+	{\end{exmpl}	
+	\end{presexmplbox}}
+
+\newenvironment{boxexmpl}
+	{\begin{exmplbox}
+	\begin{exmpl}}
+	{\end{exmpl}
+	\end{exmplbox}}	
+
+\newenvironment{boxdefn}
+	{\begin{defnbox}
+	\begin{defn}}
+	{\end{defn}
+	\end{defnbox}}
+
+
+	
+\newenvironment{WrapBoxR}[1][r]
+  {\wrapfigure{#1}{0.5\textwidth}\mdframed[backgroundcolor=LightBlue!30,skipabove=0pt,skipbelow=0pt]}
+  {\endmdframed\endwrapfigure}
+
+\newenvironment{WrapBoxL}[1][l]
+  {\wrapfigure{#1}{0.5\textwidth}\mdframed[backgroundcolor=LightBlue!30,skipabove=0pt,skipbelow=0pt]}
+  {\endmdframed\endwrapfigure}
+  
+\newenvironment{WrapCurvedR}[1][r]
+  {\wrapfigure{#1}{0.5\textwidth}\mdframed[backgroundcolor=yellow,roundcorner=10pt, skipabove=0pt,skipbelow=0pt, outerlinecolor= black]}
+  {\endmdframed\endwrapfigure}
+  
