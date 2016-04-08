@@ -1,33 +1,30 @@
 \chapter{Linear Systems}
 \section{Intersections as a Concept}
 
-\begin{recall}
-What is the solution set for the line $y=-x$? What about the line $y=2x+1$?
-\end{recall}
-
-
-\begin{defn}[Linear System]
-A linear system is made up of multiple linear functions. The solution set for a linear system is the intersection of the solution sets of the linear functions. 
-\end{defn}
-
-When talking about sets, the intersection is the collection of things that are in both sets.  Sets are just collections of objects.  We can talk about the set of flowers, the set of things that are red, or whatever other category of thing we can think of.  If something belongs to both sets, we say that it is in the intersection of those sets.  
+An important idea in math is the idea of a set.  Sets are collections of objects.  We can talk about the set of flowers, the set of things that are red, or whatever other category of thing we can think of.  If something belongs to both sets, we say that it is in the intersection of those sets.
 
 \begin{prblm}
 What's something that's in the intersection of the set of flowers and the set of things that are red?
 What would the intersection of the solution sets of two linear equations be like?
 \end{prblm}
 
-Over the course of the past few units, we've been reinforcing this idea that plotting a linear equation as a line makes some features easier to see, such as other solutions, and overall trends of those solutions.  Furthermore, finding the equation that goes with a line that has been plotted gives us some extra power, such as the ability to find solutions that are outside of the plot, or express the facts of the situation in words so that we can communicate these ideas more easily.
+We've briefly mentioned sets before.
+
+Recall: What is the solution set for the line $y=-x$? What about the line $y=2x+1$?
+
+
+\begin{defn}[Linear System]
+A linear system is made up of multiple linear equations. The solution set for a linear system is the intersection of the solution sets of the linear functions. 
+\end{defn}
+
+Over the course of the past few sections, we've been reinforcing this idea that plotting a linear equation as a line makes some features easier to see, such as other solutions, and overall trends of those solutions.  Furthermore, finding the equation that goes with a line that has been plotted gives us some extra power, such as the ability to find solutions that are outside of the plot, or express the facts of the situation in words so that we can communicate these ideas more easily.
 
 \begin{problem}
 Find some solutions to the equation $y = 3 - x$.
 Find some solutions to the equation $y = 2x$.
 
 How would you find the intersection of their solution sets?
-Describe a real-world problem that might have these equations as relationships.  Be sure to explain what the intersection means in this problem.
 \end{problem}
-
-%Elaborate
 
 \section{Graphing Linear Systems}
 
@@ -43,7 +40,30 @@ $$y - 4x = -4$$
 $$2y + x = 10$$
 
 Using this strategy, we want to plot both equations.  To do this, we want them in a form that we can use to plot them, so we'll put them in slope-intercept form.
+For the first line:
+$\begin{array}{rcl}
+y - 4x & = & -4 \\
+y & = & 4x - 4 \end{array}$
 
- 
+And for the second line:
+$\begin{array}{rcl}
+2y + x & = & 10 \\
+2y & = & 10 - x \\ 
+y & = & 5 - \frac{x}{2} \\
+y & = & - \frac{1}{2} x + 5 \end{array}$
 
+Plotting both lines then shows that they have an intersection.
+%Insert graph
+
+We can then see that the lines intersect at the point $(2,4)$.  This means that $(2,4)$ is in the solution set to both equations, and is thereby the solution to this system of equations.
 \end{example}
+
+This is a useful tool for finding solutions to systems of linear equations as long as being close is good enough.  Unfortunately, some systems of linear equations have solutions that aren't on the grid-lines for a particular scale.
+
+\begin{prblm}
+Consider the following system of linear equations.
+$$y = -\frac{1}{2}x + 3$$
+$$y = 2x$$
+
+What do you think the intersection is?  What could you do to convince someone who didn't agree?
+\end{prblm}
