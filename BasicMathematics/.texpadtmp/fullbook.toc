@@ -1,6 +1,10 @@
-\contentsline {part}{I\hspace {1em}Prequel}{3}
-\contentsline {part}{II\hspace {1em}Linear Equations}{5}
-\contentsline {part}{III\hspace {1em}Graphing Linear Equations}{7}
-\contentsline {part}{IV\hspace {1em}Linear Systems}{9}
-\contentsline {chapter}{\numberline {1}Introduction to Pramgus}{11}
+\contentsline {chapter}{\numberline {1}Operations}{}{chapter.1}
+\contentsline {section}{Exercises}{}{section*.2}
+\contentsline {section}{Problems}{}{section*.3}
+\contentsline {section}{bangus}{}{section*.4}
+\contentsline {chapter}{\numberline {2}Linear Systems}{1}{chapter.2}
+\contentsline {section}{Intersections as a Concept}{1}{section*.5}
+\contentsline {section}{Graphing Linear Systems}{3}{section*.6}
+\contentsline {section}{Substitution}{5}{section*.7}
+\contentsline {section}{Elimination}{8}{section*.8}
 \contentsfinish 
