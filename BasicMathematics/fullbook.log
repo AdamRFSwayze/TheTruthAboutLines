@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.25)  22 AUG 2016 16:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.25)  30 AUG 2016 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,11 +897,186 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip133
 )
-\c@prblm=\count173
-\c@exmpl=\count174
-\c@defn=\count175
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
-(./fullbook.aux (./review.aux) (./prequel.aux) (./linearsystems.aux))
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2013/10/03 v1.9 Data Visualization (1.9)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks38
+\t@pgfplots@tokb=\toks39
+\t@pgfplots@tokc=\toks40
+\pgfplots@tmpa=\dimen262
+\c@pgfplots@coordindex=\count173
+\c@pgfplots@scanlineindex=\count174
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+Package pgfplots: loading complementary code for your PGF version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_misc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks41
+\pgfkeys@temptoks=\toks42
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks43
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count175
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2012/09/11 v2.10 (rcs-revision 1.17)
+\pgf@plot@mark@count=\count176
+\pgfplotmarksize=\dimen263
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgflibraryfpu.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2012/11/30  (rcs-revision 1.38)
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count177
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2012/11/07  (rcs-revision 1.5)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count178
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count179
+\t@pgfplotstable@a=\toks44
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count180
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.code.tex
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen264
+\pgfdecoratedremainingdistance=\dimen265
+\pgfdecoratedinputsegmentcompleteddistance=\dimen266
+\pgfdecoratedinputsegmentremainingdistance=\dimen267
+\pgf@decorate@distancetomove=\dimen268
+\pgf@decorate@repeatstate=\count181
+\pgfdecorationsegmentamplitude=\dimen269
+\pgfdecorationsegmentlength=\dimen270
+)
+\tikz@lib@dec@box=\box62
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.pathmorphing.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
+athmorphing.code.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.pathreplacing.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
+athreplacing.code.tex))
+\pgfplots@numplots=\count182
+\pgfplots@xmin@reg=\dimen271
+\pgfplots@xmax@reg=\dimen272
+\pgfplots@ymin@reg=\dimen273
+\pgfplots@ymax@reg=\dimen274
+\pgfplots@zmin@reg=\dimen275
+\pgfplots@zmax@reg=\dimen276
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotm
+arks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2013/06/09 v2.4 Extended list environments
+\pltopsep=\skip134
+\plpartopsep=\skip135
+\plitemsep=\skip136
+\plparsep=\skip137
+\pl@lab=\toks45
+)
+
+Package hyperref Warning: Option `backref' has already been used,
+(hyperref)                setting the option has no effect on input line 45.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 45.
+
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 45.
+
+Package hyperref Info: Option `colorlinks' set `false' on input line 45.
+Package hyperref Info: Option `breaklinks' set `true' on input line 45.
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 45.
+
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 45.
+\@indexfile=\write4
+\openout4 = `fullbook.idx'.
+
+Writing index file fullbook.idx
+\c@exercise=\count183
+) (./fullbook.aux (./review.aux) (./prequel.aux) (./functions.aux)
+(./exercises.aux))
 \openout1 = `fullbook.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -919,23 +1094,22 @@ LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 6.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count176
-\scratchdimen=\dimen262
-\scratchbox=\box59
-\nofMPsegments=\count177
-\nofMParguments=\count178
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count179
-\MPscratchDim=\dimen263
-\MPnumerator=\count180
-\makeMPintoPDFobject=\count181
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count184
+\scratchdimen=\dimen277
+\scratchbox=\box63
+\nofMPsegments=\count185
+\nofMParguments=\count186
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count187
+\MPscratchDim=\dimen278
+\MPnumerator=\count188
+\makeMPintoPDFobject=\count189
+\everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -986,7 +1160,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box60
+\AtBeginShipoutBox=\box64
 Package hyperref Info: Link coloring OFF on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -995,25 +1169,72 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count182
+\c@section@level=\count190
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
 
 (./fullbook.out) (./fullbook.out)
-\@outlinefile=\write4
-\openout4 = `fullbook.out'.
+\@outlinefile=\write5
+\openout5 = `fullbook.out'.
 
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
+our preamble.
+ on input line 6.
+
+<images/chalk-board-with-math.jpg, id=27, 963.6pt x 542.025pt>
+File: images/chalk-board-with-math.jpg Graphic file (type jpg)
+
+<use images/chalk-board-with-math.jpg>
+Package pdftex.def Info: images/chalk-board-with-math.jpg used on input line 11
+.
+(pdftex.def)             Requested size: 675.75049pt x 512.1667pt.
  (./fullbook.toc
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-)
-\tf@toc=\write5
-\openout5 = `fullbook.toc'.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 2.
 
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 2.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 2.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 2.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+)
+\tf@toc=\write6
+\openout6 = `fullbook.toc'.
+
+
+<images/contentsimage.jpg, id=33, 1606.0pt x 552.0625pt>
+File: images/contentsimage.jpg Graphic file (type jpg)
+
+<use images/contentsimage.jpg>
+Package pdftex.def Info: images/contentsimage.jpg used on input line 16.
+(pdftex.def)             Requested size: 675.74069pt x 512.19978pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1023,89 +1244,130 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-\pgfsyspdfmark {pgfid2}{3729359}{76987957}
-\pgfsyspdfmark {pgfid1}{3729359}{39806242}
-]
+\pgfsyspdfmark {pgfid2}{23457674}{92671055}
+\pgfsyspdfmark {pgfid1}{3729359}{40571902}
+\pgfsyspdfmark {pgfid4}{21494517}{46505113}
+\pgfsyspdfmark {pgfid3}{4712399}{3729359}
+ <./images/chalk-board-with-math.jpg> <./images/contentsimage.jpg>]
 \openout2 = `review.aux'.
 
- (./review.tex [2
+
+(./review.texpdfTeX warning (ext4): destination with the same identifier (name{
+page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Operations} [2
 
 
 ]
 Chapter 1.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 3.
+File: images/chalk-board-with-math.jpg Graphic file (type jpg)
+<use images/chalk-board-with-math.jpg>
+Package pdftex.def Info: images/chalk-board-with-math.jpg used on input line 1.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 3.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 3.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 3.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-Package mdframed Info: mdframed works in twoside mode on input line 5.
+(pdftex.def)             Requested size: 675.75049pt x 512.1667pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+Package mdframed Info: mdframed works in twoside mode on input line 8.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5.
-Package mdframed Info: mdframed works in twoside mode on input line 11.
+(mdframed)              on input line 8.
+Package mdframed Info: mdframed works in twoside mode on input line 8.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 11.
-Package mdframed Info: mdframed works in twoside mode on input line 17.
+(mdframed)              on input line 8.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 10.
+Package mdframed Info: mdframed works in twoside mode on input line 15.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 17.
-) [3]
-\openout2 = `prequel.aux'.
-
-
-(./prequel.tex [4
-
-
-
-]
-Chapter 2.
+(mdframed)              on input line 15.
 Package mdframed Info: mdframed works in twoside mode on input line 22.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 22.
-Package mdframed Info: mdframed works in twoside mode on input line 33.
+Package mdframed Info: mdframed works in twoside mode on input line 22.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 33.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 34.
+(mdframed)              on input line 22.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 34.
+ mdframed uses option nobreak mdframed on input line 24.
+Package mdframed Info: mdframed works in twoside mode on input line 45.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 45.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 \end{defn}
+                [3]
+Package mdframed Info: Not enough space on this page on input line 47.
+Package mdframed Info: mdframed works in twoside mode on input line 49.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 49.
+Package mdframed Info: mdframed works in twoside mode on input line 95.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 95.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.113 \end
+          {enumerate} [4])pdfTeX warning (ext4): destination with the same iden
+tifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 \include{review}
+                      [5]
+\openout2 = `prequel.aux'.
+
+ (./prequel.tex
+Package mdframed Info: mdframed works in twoside mode on input line 12.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+Package mdframed Info: mdframed works in twoside mode on input line 19.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 19.
+Package mdframed Info: mdframed works in twoside mode on input line 24.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 24.
+Package mdframed Info: mdframed works in twoside mode on input line 29.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 29.
+Package mdframed Info: mdframed works in twoside mode on input line 34.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 34.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 35.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 35.
+
+Overfull \hbox (1.73682pt too wide) in paragraph at lines 38--39
+[][]\OT1/ptm/m/n/12 yecdahiluzhnvurhnuanhurnhruinaufio c ur aiuor
+ []
+
 Package mdframed Info: mdframed works in twoside mode on input line 41.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 41.
 
-Underfull \hbox (badness 1975) in paragraph at lines 41--42
-\OT1/ptm/m/n/14.4 auior iul ahrui huiro auiro aior hi-
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 41--42
-\OT1/ptm/m/n/14.4 airui ailhruf iaru aigr auyz huila fi-
+Underfull \hbox (badness 1231) in paragraph at lines 41--42
+\OT1/ptm/m/n/12 ahrui huiro auiro aior hi-uoaiua h lka-jhr ilr
  []
 
 Package mdframed Info: mdframed inside float 
@@ -1113,129 +1375,70 @@ Package mdframed Info: mdframed inside float
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 42.
 
-Underfull \hbox (badness 1107) in paragraph at lines 46--47
-[][]\OT1/ptm/m/n/14.4 ilauhc aiouh fioaur aiu riourhui uar
+Underfull \hbox (badness 1558) in paragraph at lines 46--47
+\OT1/ptm/m/n/12 uhila rilu auirl aguir-gal-i-uri-au-railu val-iug ioug
  []
-
-
-Underfull \vbox (badness 6893) has occurred while \output is active []
-
- [5]
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-51.
 
 Package mdframed Info: mdframed works in twoside mode on input line 51.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 51.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 52.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 52.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 \include{prequel}
+                       [6
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 54
-.
 
+]
+\openout2 = `functions.aux'.
 
-Underfull \hbox (badness 1087) in paragraph at lines 54--55
-\OT1/ptm/m/n/14.4 rgyaiu rgyiar gc-syrg iabriy graor gay-
- []
+ (./functions.tex
+Chapter 2.
+File: images/chalk-board-with-math.jpg Graphic file (type jpg)
+<use images/chalk-board-with-math.jpg>
+Package pdftex.def Info: images/chalk-board-with-math.jpg used on input line 1.
 
-Package mdframed Info: mdframed works in twoside mode on input line 57.
+(pdftex.def)             Requested size: 675.75049pt x 512.1667pt.
+Package mdframed Info: mdframed works in twoside mode on input line 4.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 57.
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 58
-.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 63
-.
-
-) [6]
-\openout2 = `linearsystems.aux'.
-
- (./linearsystems.tex
-Chapter 3.
-
-! LaTeX Error: Environment problem undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.22 \begin{problem}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{problem}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 \end{problem}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \vbox (badness 1264) has occurred while \output is active []
-
- [7
+(mdframed)              on input line 4.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 \include{functions}
+                         [7
 
 
 
 ]
+\openout2 = `exercises.aux'.
 
-! LaTeX Error: Environment example undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 \begin{example}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ (./exercises.tex [1
 
 
-! LaTeX Error: \begin{document} ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59 \end{example}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
- (./fullbook.aux (./review.aux) (./prequel.aux) (./linearsystems.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+]) [2]
+No file fullbook.ind.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
+(./fullbook.aux (./review.aux) (./prequel.aux) (./functions.aux)
+(./exercises.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `fullbook.out' has not changed.
-(rerunfilecheck)             Checksum: 52B879DF905994603343B316B44804A0;282.
+(rerunfilecheck)             Checksum: 934D0D101E140969CB94DB987F521B02;247.
  ) 
 Here is how much of TeX's memory you used:
- 21999 strings out of 493304
- 400617 string characters out of 6139870
- 482555 words of memory out of 5000000
- 24985 multiletter control sequences out of 15000+600000
- 29040 words of font info for 66 fonts, out of 8000000 for 9000
+ 30077 strings out of 493304
+ 653163 string characters out of 6139870
+ 831284 words of memory out of 5000000
+ 32881 multiletter control sequences out of 15000+600000
+ 38899 words of font info for 89 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 60i,10n,77p,10466b,1062s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,10n,96p,10466b,2091s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -1246,10 +1449,10 @@ s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on fullbook.pdf (8 pages, 96033 bytes).
+Output written on fullbook.pdf (9 pages, 992037 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
