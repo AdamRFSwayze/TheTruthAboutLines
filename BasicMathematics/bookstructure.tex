@@ -282,7 +282,7 @@ linewidth=8pt]{theorembox}
 %Pgfplot stuff
 
 \usetikzlibrary{shapes,arrows}
-\usetikzlibrary{arrows.meta,positioning,calc}
+%\usetikzlibrary{arrows.meta,positioning,calc}
 \pgfplotsset{
     vasymptote/.style={before end axis/.append code={\draw[dashed,<->,-{Latex}] ({rel axis cs:0,0} -| {axis cs:#1,0}) -- ({rel axis cs:0,1} -| {axis cs:#1,0}); }},
     myaxis/.style={axis line style={<->, {Latex}-{Latex}}}
