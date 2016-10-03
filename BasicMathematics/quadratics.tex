@@ -89,6 +89,8 @@ To understand vertex form, we first elaborate on the simplest quadratic: $x^2$. 
 
 When thinking about every point as $(x, f(x))$, if we want to move the vertex to the left or the right, we change the $x$-value.  If we want to move the vertex up or down, we change the $f(x)$ value.  Thus, any point where the graph has been moved to the right by $h$ and up by $k$ will be $(x + h, f(x) + k)$.  However, we only want our inputs to be $x$'s, so, adjusting all $x$'s appropriately, $(x, f(x-h)+k)$
 
+If we also allow the graph to be stretched, we can easily account for this in vertex form.  $$a(x-h)^2 + k$$
+
 \begin{example}
 
 We want to find a quadratic with its vertex at the point $(1,2)$.
@@ -109,11 +111,7 @@ Now that we've covered the forms for quadratic expressions, we need a way to swi
 
 \subsection*{More Fun With the Distributive Property}
 
-One of the most important properties that we regularly use in algebra is the Distributive property.
-
-\begin{example}
-
-In this case, the 3 gets multiplied by each term in parentheses.
+One of the most important properties that we regularly use in algebra is the Distributive property.  In the following case, the 3 gets multiplied by each term in parentheses.
 
 $$3(x-4) = 3x - 12$$
 
@@ -123,8 +121,6 @@ $$\begin{array}{rl}
 -6(\frac{1}{4}- x) & = \\ & \\
 -6\frac{1}{4} -(-6x) & = \\ & \\
 -\frac{3}{2} + 6x\end{array}$$
-
-\end{example}
 
 In both of these examples, only a constant was being distributed, but the distributive property works no matter what we're multiplying.  Most importantly, it works with groups of parentheses.
 
@@ -141,6 +137,21 @@ $$\begin{array}{rcll}
 \end{example}
 
 After reordering the terms from highest exponent to lowest, we recognize this as a quadratic in standard form.
+
+\begin{example}
+Put the following expression into standard form.
+
+$$(x + \frac{1}{2})^2$$
+
+First, we want to write this as a product.  Then we can comfortably distribute.
+
+$$\begin{array}{rl}
+(x+\frac{1}{2})^2 & = (x+\frac{1}{2})(x+\frac{1}{2}) \\ & \\
+& = x(x+\frac{1}{2})+ \frac{1}{2}(x+\frac{1}{2}) \\ & \\
+& = x^2 + \frac{1}{2}x + \frac{1}{2}x + \frac{1}{2}\frac{1}{2} \\ & \\
+& = x^2 + x + \frac{1}{4}
+\end{array}$$
+\end{example}
 
 \subsection*{Factoring Quadratics}
 
@@ -180,9 +191,47 @@ Since $x$ has a coefficient of +1, here, we can see that the factored form must 
 
 \section*{Completing the Square}
 
-Any quadratic expression can be expressed in vertex form.  However, since we haven't reached how to express every quadratic in factored form, the previously discussed strategy isn't sufficient for every situation.  However, if we are given a quadratic in standard form, we can 
+Any quadratic expression can be expressed in vertex form.  However, since we haven't reached how to express every quadratic in factored form, the previously discussed strategy isn't sufficient for every situation.  However, if we are given a quadratic in standard form, we can always put it in vertex form.
 
+First, we should convert from vertex form to standard form.
 
+$$\begin{array}{rcl}
+a(x-h)^2 + k & = & a(x^2 - 2hx + h^2) + k\\
+& = & ax^2 - 2ahx + ah^2 + k\end{array}$$
+
+If we look long and hard enough at this alphabet soup, we notice that only the first two terms have $x$ in them.  Each of those terms also has $a$, meaning that we have enough information to sort out what $h$ has to be by identifying $a$ and then looking at the term with $x^1$.
+
+\begin{example}
+Where is the vertex of this quadratic?
+$$3x^2 - 4x + 2$$
+
+First, we ask where the $x$-value of the vertex is.  Notice that $a = 3$.  Also, $-2ahx$ corresponds to $-4x$.  Setting these equal,
+$$\begin{array}{rcl}
+-2ahx & = & -4x \\
+-6hx & = &-4x \\
+hx & = & \frac{2}{3}x \\
+h & = & \frac{2}{3}
+\end{array}$$
+
+Now, if we want to figure out the $y$-value of the vertex, we need to look at what we have so far.
+
+$$3(x - \frac{2}{3})^2 + k$$
+
+When we try to put this back into standard form, we have
+
+$$\begin{array}{rcl}
+3(x - \frac{2}{3})^2 + k & = & 3(x - \frac{2}{3})(x - \frac{2}{3})+ k\\& & \\
+& = & (3x - 2)(x - \frac{2}{3}) + k\\& & \\
+& = & 3x(x - \frac{2}{3}) - 2(x - \frac{2}{3}) + k \\& & \\
+& = & 3x^2 - 2x - 2x + \frac{4}{3}) + k \\ & & \\
+& = & 3x - 4x + \frac{4}{3} + k
+\end{array}$$
+
+Since our original expression has a constant term of 2, we need $\frac{4}{3} + k = 2$.  Thus, $k = \frac{2}{3}$
+
+We then know $h$ and $k$, so our vertex is at $(\frac{2}{3}, \frac{2}{3})$.
+
+\end{example}
 
 \section*{Solving Quadratic Equations}
 
@@ -192,4 +241,90 @@ A quadratic equation is any equation with a quadratic expression in it.  Sounds 
 $x^2 - 2x + 1 = 4$ is a quadratic equation.  By graphing the quadratic expression, we can see that it equals 4 when $x = -1$ and when $x = 3$.
 \end{example}
 
-This is a rather crude way to see the solutions, we we want to use algebra if we can.  One of the simplest ways to achieve
+This is a rather crude way to see the solutions, so we want to use algebra if we can.  We can do this with either factoring or putting the expression in vertex form.  The latter is the most consistently successful method, but we will begin by demonstrating factoring.
+
+We want to find solutions to the following equation,
+
+$$x^2 - 3x - 4 = - 6$$
+
+A common mistake is to factor this expression without a goal in mind.  The reason factoring a quadratic is useful is because it is easy to find where the expression equals zero.  If we factor the left side of the equation now, we would have to figure out where it equals -6, which is not nearly so easy.  Before factoring, we should make sure the right side is zero so that we get the information we want.
+
+$$x^2 - 3x + 2 = 0$$
+
+We have a new quadratic expression on the left side, and if it were in factored form, it would then be easy to find solutions for $x$.  Now we need two numbers we can multiply to get 2, but add to get -3.  Since -1 and -2 are the only valid choices, we can change to the factored form.
+
+$$(x-1)(x-2) = 0$$
+
+And we know this will only be true when $x = 1$ or $x = 2$, so 1 and 2 are our solutions to this quadratic equation.
+
+\begin{example}
+Solve the quadratic equation by factoring.
+$$(x - 5)(x + 1) = -8$$
+
+You may have noticed: the quadratic expression is already factored.  However, the factored form being equal to -8 isn't the simplest to find.  We need a different expression that's equal to zero before factoring gets us anything useful.  We'll put it into standard form first and see where that gets us.
+
+$$\begin{array}{rcl}
+(x - 5)(x + 1) & = & -8 \\
+x(x+1) - 5(x+1) & = & -8 \\
+x^2 + x - 5x - 5 & = & -8 \\
+x^2 - 4x - 5 & = & -8
+\end{array}$$
+
+Great!  Now that we're here, we can do what we did last time.  We need a quadratic expression equal to zero, and then we can factor it and get information that helps us.
+
+$$\begin{array}{rcl}
+x^2 - 4x - 5 & = & -8 \\
+x^2 - 4x + 3 & = & 0 \\
+(x - 1)(x - 3) & = & 0 \\
+\end{array}$$
+
+Now we can clearly see that our solutions are 1 and 3.
+
+\end{example}
+
+If we need to find a solution with a quadratic in vertex form, we want to solve for the squared expression first, and then we can worry about $x$.
+
+If we have
+$$\frac{1}{4}(x - 1)^2 - 4 = 0$$
+
+We want to use inverse operations to undo everything that's been done to the $x$, in the reverse order.
+
+$$\begin{array}{rcl}
+\frac{1}{4}(x - 1)^2 - 4 & =& 0\\
+\frac{1}{4}(x - 1)^2 & =& 4 \\
+(x - 1)^2 & =& 16 \\
+x - 1 & =& 4 \text{ or } -4\\
+x & = & 5 \text{ or } -3\\
+\end{array}$$
+
+Thus, we have 5 and -3 as solutions.  Because we don't want a bunch of `or's in our equations, there's a symbol for representing positive or negative values: $\pm$.  $\pm4$ means either +4 or -4.  It's important to remember that, when taking the square root of an expression, the result can be either positive or negative.
+
+\begin{example}
+Find solutions to
+$$x^2 - 10x + 10 = 0$$
+
+First, we find the vertex.  We know that whatever $h$ is will give us the term $-10x$ when we distribute $(x - h)^2$, so $h = 5$.  Now, to find $k$, 
+
+$$\begin{array}{rcl}
+x^2 - 10x + 10  & = & (x - 5)^2 + k\\
+x^2 - 10x + 10  & = & x^2 - 10x + 25 + k \\ 
+10  & = & 25 + k \\ 
+-15  & = & k
+\end{array}$$
+
+Now that we know what the vertex form of this quadratic will look like, we can begin solving for $x$.
+
+$$\begin{array}{rcl}
+(x - 5)^2 - 15 & = & 0 \\
+(x - 5)^2 & = & 15 \\
+x - 5 & = & \pm \sqrt{15} \\
+x & = & \pm \sqrt{15} + 5\\
+\end{array}$$
+
+Since 15 is not a perfect square, we usually leave our answers in this form since it is more exact.  We could also find decimal approximations, but they are more difficult to work with since we won't be able to go backward.  We write our solutions as a list as usual:
+
+$5 + \sqrt{15}$, 
+
+$5 - \sqrt{15}$
+
+\end{example}
