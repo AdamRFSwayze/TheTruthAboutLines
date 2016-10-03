@@ -4,33 +4,34 @@ While understanding how to work with lines is incredibly useful for modeling man
 
 This chapter is going to be about equations that are the product of two linear terms.  That is, rather than dealing with functions like $f(x) = 3x - 1$ or $f(x) = \frac{1}{4}x + 2$, we'll be dealing with things like these multiplied together, or $f(x) = (3x-1)(\frac{1}{4}x + 2)$.  We'll cover the different forms that these equations can take, and we'll cover the ways we can solve for our inputs.
 
-The simplest quadratic we deal with is the function which simply squares inputs.  If we put in a 3, we get out a 9.  If we put in a 4, we get out a 16.
-
-
 \begin{presentation}
-	\begin{defn}
-	Presentation Defn
-	\end{defn}
+\begin{defn}
+Polynomial
+
+An expression which can be written as the product of linear expressions.  These expressions may require complex numbers.
+\end{defn}
 \end{presentation}
 
-\begin{prblm}
-	Solve the system of linear equations:
-	
-	$$y -2x = -3\frac{1}{2}$$
-	$$y = -\frac{3}{2}x + 3\frac{1}{2}$$
-\end{prblm}
+\begin{defn}
+Quadratic
 
-\begin{theorem}
-duh theorem
-\end{theorem}
+A polynomial which is the product of exactly two linear expressions.
+\end{defn}
+
+The simplest quadratic we deal with is the function which simply squares inputs.  If we put in a 3, we get out a 9.  If we put in a 4, we get out a 16.  We will call this the squaring function.  Unlike the doubling function, the squaring function is not linear.  It can be written as $f(x) = x^2$.  Note that $x$ is a linear expression.  This means $x^2$ is the product of two linear expressions, so it conforms to our definition of quadratic.
 
 \begin{example}
-teh example.
+If we want to find the area of a rectangle, we multiply the length by the width, $A = lw$.  If we have 10 feet of wood, we can express the area as a function of the length.  Because we have 10 feet of wood to make two lengths and two widths, we know $2l + 2w = 10$.   If we solve one for $w$, we can replace the $w$ in the area equation by substituting.
+
+$$\begin{array}{rl}
+2l + 2w & = 10\\
+2w & = 10 - 2l\\
+w & = 5 - l\end{array}$$
+
+Then the area is the product of two linear expressions containing $l$, 
+
+$$A(l) = l*(5 - l)$$
 \end{example}
-
-$$2y + 3x = -75$$
-$$5y + 8x = -55$$
-
 
 \section*{Forms of Quadratics}
 
@@ -43,13 +44,15 @@ If a quadratic is expressed as the product of two linear pieces, we say that it 
 One of the linear terms that is multiplied in the factored form of a polynomial.
 \end{defn}
 
+
+\begin{presentation}
 \begin{defn} Root
-
-The roots of a polynomial are the inputs for which it gives an output of zero.  This can also be interpreted as its $x$-intercepts.  When a quadratic is in factored form, it is easy to identify its roots, since only one factor needs to be zero for the whole polynomial to be zero.
+The roots of a polynomial are the inputs for which it gives an output of zero.  If we graph the polynomial, the roots will show up as $x$-intercepts.  When a quadratic is in factored form, it is easy to identify its roots, since only one factor needs to be zero for the whole polynomial to be zero.
 \end{defn}
+\end{presentation}
 
+\begin{presentation}
 \begin{example}
-
 To find the roots of the quadratic $(x-2)(x+4)$, we need to find where it is equal to zero.  It can only be zero if either $(x-2)$ or $(x+4)$ is equal to zero.  Then the roots correspond to the $x$-intercepts of the linear functions made by each output.
 
 To find the first root, we find out where $(x-2) = 0$.  This is a simple linear equation, and we know that it is true if $x = 2$.
@@ -59,9 +62,9 @@ To find the second root, we similarly find out where $(x+4) = 0$.  Here, we know
 Since either one of these factors giving an output of zero will make the output of the quadratic zero, both of the solutions we found are roots of the quadratic.
 
 \end{example}
+\end{presentation}
 
-
-It is important to mention that not every quadratic can be expressed in factored form using only real numbers.  Real numbers have an unfortunate name in that they are not any more real than complex numbers, which have an `imaginary' part.  We won't worry too much about complex numbers in this class.  If a quadratic cannot be expressed in factored form in real numbers.
+It is important to mention that not every quadratic can be expressed in factored form using only real numbers.  Real numbers have an unfortunate name in that they are not any more real than complex numbers, which have an `imaginary' part.  We won't worry too much about complex numbers in this class.  If a quadratic cannot be expressed in factored form in real numbers, we can still express it in other ways.
 
 \subsection*{Standard Form}
 
@@ -72,11 +75,14 @@ One of the most important properties that we regularly use in algebra is the Dis
 
 In this case, the 3 gets multiplied by each term in parentheses.
 
-$3(x-4) = 3x - 12$
+$$3(x-4) = 3x - 12$$
 
 In this case, the -6 gets multiplied by each term in the parentheses, but some simplification is required.
 
-$-6(\frac{1}{4}- x) = -6\frac{1}{4} -(-6x) = -\frac{3}{2} + 6x$
+$$\begin{array}{rl}
+-6(\frac{1}{4}- x) & = \\ & \\
+-6\frac{1}{4} -(-6x) & = \\ & \\
+-\frac{3}{2} + 6x\end{array}$$
 
 \end{example}
 
@@ -84,15 +90,17 @@ In both of these examples, only a constant was being distributed, but the distri
 
 \begin{example}
 
-In the following group, the entire group $(2x + 3)$ gets multiplied by each term in the other group.
+In the following group, the entire factor $(2x + 3)$ gets multiplied by each term in the other factor.
 $$(2x + 3)(5-x) = (2x+3)5 - (2x+3)x$$
 
-From here, we have two more terms, each of which can be distributed.
+From here, we have two more terms, and each of these can be simplified by distributing.
 
-$$(2x + 3)5 - (2x + 3)x = 10x+15-2x^2+3x = -2x^2 + 13x + 15$$
+$$\begin{array}{rcll}
+(2x + 3)5 & - & (2x + 3)x & = \\
+10x+15 & - & 2xx+3x & = -2x^2 + 13x + 15\end{array}$$
 \end{example}
 
-Once we have this form of quadratic, we call it a quadratic in standard form.  It is typically ordered from highest exponent to lowest exponent.
+Once we have this form of quadratic, if we order the terms from highest exponent to lowest exponent, we call it a quadratic in standard form.  While we can't write every quadratic in factored form (yet), we can always express them in standard form.
 
 \subsection*{Vertex Form}
 
@@ -103,7 +111,7 @@ This form of a quadratic is most closely related to the point-slope form of a li
 A vertex is the lowermost or uppermost point of a parabola.
 \end{defn}
 
-To understand vertex form, we first elaborate on the simplest quadratic: $x^2$.  Its vertex will be at the point $(0,0)$.  However, by moving this simple function, called a `parent function', we can make quadratics with vertices at other points.
+To understand vertex form, we first elaborate on the simplest quadratic: $x^2$.  Its vertex will be at the point $(0,0)$.  However, by moving this simple function, called a `parent function', we can make quadratics with vertices at other points.  We call it the parent function because...
 
 When thinking about every point as $(x, f(x))$, if we want to move the vertex to the left or the right, we change the $x$-value.  If we want to move the vertex up or down, we change the $f(x)$ value.  Thus, any point where the graph has been moved to the right by $h$ and up by $k$ will be $(x + h, f(x) + k)$.  However, we only want our inputs to be $x$'s, so, adjusting all $x$'s appropriately, $(x, f(x-h)+k)$
 
@@ -111,7 +119,7 @@ When thinking about every point as $(x, f(x))$, if we want to move the vertex to
 
 We want to find a quadratic with its vertex at the point $(1,2)$.
 
-First, we look at the parent function, $f(x) = x^2$.  If all points on it are expressed $(x, f(x))$, the vertex is normally at $(0,0)$.  If we want the vertex to be at $(1,2)$, we have to move up one, and over by two.  Thus, our new points will be $(x, f(x-h)+k)$, making our new function $f^\prime(x) = (x-1)^2 + 2$.
+First, we look at the parent function, $f(x) = x^2$.  If all points on it are expressed $(x, f(x))$, the vertex is normally at $(0,0)$.  If we want the vertex to be at $(1,2)$, we have to move over one, and up by two.  Thus, our new points will be $(x, f(x-h)+k)$, making our new function $g(x) = (x-1)^2 + 2$.
 
 This is then a quadratic with a vertex at the point $(1,2)$.
 
@@ -119,6 +127,45 @@ This is then a quadratic with a vertex at the point $(1,2)$.
 
 \section*{Factoring Quadratics}
 
+If you're looking at a quadratic in standard form, but if you want to know the roots, it is very useful to put it into factored form.  We do this by considering what linear terms we would have to distribute in order to achieve a particular standard form.
+
+\begin{example}
+
+When we look at the following quadratic in standard form, we take note of a few things.
+
+$x^2 + 5x + 6$
+
+First, if we were to write it as $(x + a)(x + b)$, we know that $a$ and $b$ would have to multiply together to give 6.  We also know that $ax + bx = 5x$.  So now our job is to figure out what $a$ and $b$ are.  We can start by listing everything that we can that will multiply to get 6.
+
+1 and 6
+
+2 and 3
+
+If we add 1 and 6, we get 7.  If we add 2 and 3, we get 5.  Since we needed $a$ and $b$ to add up to 5, we know that our factored form is $(x + 2)(x + 3)$.  We can always check this by distributing. 
+
+\end{example}
+
+\begin{example}
+
+If we want to factor $x^2 +x - 6$, we have something new to consider.  We need numbers which will multiply to give us 6, but now we can use either positive or negative numbers.
+
+1 and -6
+
+-1 and 6
+
+2 and -3
+
+-2 and 3
+
+Since $x$ has a coefficient of +1, here, we can see that the factored form must be $(x+3)(x + -2)$.  We then simplify this to $(x+3)(x - 2)$
+
+\end{example}
 
 
-\section*{Solving Quadratics}
+\section*{Solving Quadratic Equations}
+
+A quadratic equation is any equation with a quadratic expression in it.  Sounds reasonable enough!
+
+\begin{example}
+$x^2 - 2x + 1 = 4$ is a quadratic equation.  We can 
+\end{example}
