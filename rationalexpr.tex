@@ -1,0 +1,129 @@
+\chapter{Rational Expressions}
+
+If we view the last chapter as an introduction to the multiplication of linear expressions, we can look at this chapter as the equivalent introduction for division. Therefore, it may be helpful to review what a rational number is. Hence, a rational number is to integers as a rational expression is to linear expressions.
+
+\begin{defn}[Rational Expression]
+	A rational expression is an expression that can be written as a fraction of polynomials. 
+\end{defn}
+
+Rational expressions 
+
+\begin{defn}[Relatively Prime]
+	Two numbers (or expressions) are relatively prime if the only factor they have in common is 1. A rational expression is said to be in simplest form if the numerator and denominator are relatively prime. 
+\end{defn}
+
+\begin{example}
+	Put the following rational expression into simplest form:
+	
+	\[
+	\frac{x^2+2x+1}{x+1}
+	\]
+	
+	What we want to check here is whether the numerator and denominator have any common factors. The expression $x+1$ is already prime. So we have to check the factors of $x^2+2x+1$. When we factor this quadratic, we get $(x+1)(x+1)$. Now we have:
+	\[
+	\frac{(x+1)(x+1)}{(x+1)}
+	\]
+	
+	Since the numerator and denominator have a common factor, we can divide out the factor ($x+1$) to find:
+	\[
+	\frac{(x+1)(x+1)}{(x+1)}= \frac{\xcancel{(x+1)}(x+1)}{\xcancel{(x+1)}}=\frac{(x+1)}{1}=x+1
+	\]
+\end{example}
+
+
+The benefit from factoring using vertex form is every quadratic with real roots can be factored. However, when dealing with rational expressions, we can usually tell if we need to factor to the point of irrational roots. 
+
+\begin{example}
+Consider the following rational expression:
+
+\[
+\frac{x^2+3x+7}{(x+\frac{\sqrt{9}-3}{2})}
+\]
+
+If we want to put this quadratic into simplest form, we would want to find whether these have any common factors. The denominator is already prime, since it is linear, but the numerator is not. We cannot factor this quadratic ($x^2+3x+7$) easily. But if we look at the denominator, which is prime, we can see that in order to possibly simplify this quadratic, we would need to find that $(x+\frac{\sqrt{9}-3}{2}$ is a factor of $x^2+3x+7$. In this case factoring to the point of irrational roots would be necessary. But situations like this will arise in only a few exercises. 
+\end{example}
+
+
+Thus rational expressions require some degree of critical thinking whether we should factor a polynomial to its linear terms or not. Many times factoring to linear terms will not help us divide out any common factors.
+
+\begin{example}
+Simplify to simplest form the following rational expression:
+
+\[
+\frac{x^2-9x+20}{x+1}
+\]	
+
+If we want to reduce this to its simplest form, we would need to find $(x+1)$ is a factor of $x^2-9x+20$. If we were to factor this, we would find that $x^2-9x+20= (x-4)(x-5)$. Thus we have:
+\[
+\frac{(x-4)(x-5)}{(x+1)}
+\]
+Since the numerator or the denominator have no common factors, we know that this must be the simplest form. 
+\end{example}
+
+The fun doesn't stop here. Much like with regular fractions, putting these rational expressions into simplest form is just the beginning. We can add, subtract, multiply, and divide these expressions using the same methods we add, subtract, and divide fractions. Let's first explore adding rational expressions.
+
+\begin{example}[Adding Rational Expressions]
+Simplify the following:
+
+\[
+\frac{x^2}{(x-2)}+\frac{-4}{(x-2)}
+\]
+When we are adding or subtracting, we need to make sure we have the same denominators for both rational expressions. In this case, we already do. Therefore, we simply add the numerators and keep the denominators the same. 
+
+\[
+\frac{x^2}{(x-2)}+\frac{-4}{(x-2)}=\frac{x^2-4}{(x-2)}
+\]
+
+But we still aren't done! The directions said to simplify, which means we need to make sure our new rational expression is in simplest form. If we factor the numerator, we find:
+\[
+\frac{x^2-4}{(x-2)}=\frac{(x-2)(x+2)}{(x-2)}=\frac{\xcancel{(x-2)}(x+2)}{\xcancel{(x-2)}}=x+2
+\]
+Now we are done. Our answer in simplest form is $x+2$.
+\end{example}
+
+Adding and subtracting are easy when we have denominators that are the same, but that isn't always the case. Often, we will have to get common denominators before we can perform the operation. 
+
+\begin{example}[Addition without Common Denominator]
+Simplify the following rational expressions:
+
+\[
+\frac{x^2+7x+6}{(x+1)}+\frac{2x}{3}
+\]	
+Bummer. Now we have to make a choice. Do we want to try to simplify either expression before we add? First let's check if we can quickly factor anything. The numerator of the first expression is $x^2+7x+6$, which we can factor into $(x+6)(x+1)$. Therefore, we have:
+\[
+\frac{(x+6)(x+1)}{(x+1)}+\frac{2x}{3}=\frac{(x+6)\xcancel{(x+1)}}{\xcancel{(x+1)}}+\frac{2x}{3}=\frac{(x+6)}{1}+\frac{2x}{3}
+\]
+Still not ready to add, because we need these fractions to have the same denominator. So, we can multiply both the numerator and denominator of the first expression by three to get:
+\[
+\frac{3(x+6)}{3}+ \frac{2x}{3}
+\]
+Now we are good to go. By adding across, we find:
+\[
+\frac{3(x+6)+2x}{3}
+\]
+Last but not least, we want to put this expression in simplest form.
+\[
+\frac{3(x+6)+2x}{3}=\frac{5x+18}{3}.
+\]
+\end{example}
+
+Finding a common denominator will not always be as easy as multiplying by an integer. More often than not, we will have to multiply the numerator and denominator by a full expression. In this next example, we have to multiply by $x$.
+
+\begin{example}[Subtraction]
+Subtract the following rational expressions. Simplify your answer:
+\[
+\frac{x-2}{1}-\frac{8}{x}
+\]	
+Once again, we don't have common denominators. A quick check also tells us that both these expressions are already simplified. Therefore, next step is getting a common denominator.
+\[
+\frac{x}{x} \cdot \frac{x-2}{1} -\frac{8}{x} = \frac{x^2 -2x}{x}-\frac{8}{x}=\frac{x^2-2x-8}{x}
+\]
+Can we simplify this? Let's check:
+\[
+\frac{x^2-2x-8}{x}=\frac{(x-4)(x+2)}{x}
+\]
+When we factor the numerator, we find that the numerator and denominator have no common factors. Therefore, this is simplified. 
+\end{example}
+
+
+

@@ -1,0 +1,319 @@
+\chapter{Quadratics}
+
+While understanding how to work with lines is incredibly useful for modeling many relationships, we know that the real world is a bit more complex.  When we look at the growth of a population over time or at the path that a ball takes through the air, we quickly realize that linear equations can only do so much.  One of the first step forward is to begin dealing with functions and equations that involve higher exponents.  
+
+This chapter is going to be about equations that are the product of two linear terms.  That is, rather than dealing with functions like $f(x) = 3x - 1$ or $f(x) = \frac{1}{4}x + 2$, we'll be dealing with things like these multiplied together, or $f(x) = (3x-1)(\frac{1}{4}x + 2)$.  We'll cover the different forms that these equations can take, and we'll cover the ways we can solve for our inputs.
+
+\begin{presentation}
+\begin{defn}[Polynomial]
+An expression which can be written as the product of linear expressions.  These expressions may require complex numbers.
+\end{defn}
+\end{presentation}
+
+\begin{defn}[Quadratic]
+A polynomial which is the product of exactly two linear expressions.
+\end{defn}
+
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+
+\begin{wrapfigure}[13]{r}{0cm}
+\begin{tikzpicture}[scale=.65, line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-6.,0.) -- (6.,0.);
+\foreach \x in {-6.,-5.,-4.,-3.,-2.,-1.,1.,2.,3.,4.,5.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-1.) -- (0.,8.5);
+\foreach \y in {-1.,1.,2.,3.,4.,5.,6.,7.,8.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-6.,-1.) rectangle (6.,8.5);
+\draw[line width=1.2pt,color=qqwuqq,smooth,samples=100,domain=-6.0:6.0] plot(\x,{(\x)^(2)});
+\begin{scriptsize}
+\draw[color=qqwuqq] (-2.4617218111475196,7.787166851080022) node {$x^2$};
+\end{scriptsize}
+\end{tikzpicture}
+\caption{The function $f(x)=x^2$.}\label{Squaring Function}
+\end{wrapfigure}
+
+The simplest quadratic we deal with is the function which simply squares inputs.  If we put in a 3, we get out a 9.  If we put in a 4, we get out a 16.  We will call this the squaring function.  Unlike the doubling function, the squaring function is not linear.  It can be written as $f(x) = x^2$.  Note that $x$ is a linear expression.  This means $x^2$ is the product of two linear expressions, so it conforms to our definition of quadratic. Let's take a look at what the squaring function looks like graphed (Figure ~\ref{Squaring Function}).
+
+Any two linear expressions can be multiplied to produce a quadratic. We see these types of expressions in real world problems such as in finding the area of a rectangle.
+
+
+
+
+\newpage
+\begin{example}
+If we want to find the area of a rectangle, we multiply the length by the width, $A = lw$.  If we have 10 feet of wood, we can express the area as a function of the length.  Because we have 10 feet of wood to make two lengths and two widths, we know $2l + 2w = 10$.   If we solve one for $w$, we can replace the $w$ in the area equation by substituting.
+
+$$\begin{array}{rl}
+2l + 2w & = 10\\
+2w & = 10 - 2l\\
+w & = 5 - l\end{array}$$
+
+Then the area is the product of two linear expressions containing $l$, 
+
+$$A(l) = l*(5 - l)$$
+\end{example}
+
+\section*{Forms of Quadratics}
+
+\subsection*{Factored Form}
+
+If a quadratic is expressed as the product of two linear pieces, we say that it is in factored form.
+
+\begin{defn}[Factor]
+
+One of the linear terms that is multiplied in the factored form of a polynomial.
+\end{defn}
+
+
+\begin{presentation}
+\begin{defn}[Root]
+The roots of a polynomial are the inputs for which it gives an output of zero.  If we graph the polynomial, the roots will show up as $x$-intercepts.  When a quadratic is in factored form, it is easy to identify its roots, since only one factor needs to be zero for the whole polynomial to be zero.
+\end{defn}
+\end{presentation}
+
+\begin{presentation}
+\begin{example}
+To find the roots of the quadratic $(x-2)(x+4)$, we need to find where it is equal to zero.  It can only be zero if either $(x-2)$ or $(x+4)$ is equal to zero.  Then the roots correspond to the $x$-intercepts of the linear functions made by each output.
+
+To find the first root, we find out where $(x-2) = 0$.  This is a simple linear equation, and we know that it is true if $x = 2$.
+
+To find the second root, we similarly find out where $(x+4) = 0$.  Here, we know that it is true if $x = -4$.
+
+Since either one of these factors giving an output of zero will make the output of the quadratic zero, both of the solutions we found are roots of the quadratic.
+
+\end{example}
+\end{presentation}
+
+It is important to mention that not every quadratic can be expressed in factored form using only \hyperref[Real Number]{\textbf{real numbers}}. Real numbers have an unfortunate name in that they are not any more real than \hyperref[Complex Number]{\textbf{complex numbers}}, which have an \hyperref[Imaginary Constant]{\textbf{`imaginary' part}}.  We won't worry too much about complex numbers in this class.  If a quadratic cannot be expressed in factored form in real numbers, we can still express it in other ways.
+
+\subsection*{Standard Form}
+
+
+One of the most important properties that we regularly use in algebra is the \hyperref[Distributive Property]{Distributive property}.
+
+\begin{example}\label{Distributive Example}
+
+In this case, the 3 gets multiplied by each term in parentheses.
+
+$$3(x-4) = 3x - 12$$
+
+In this case, the -6 gets multiplied by each term in the parentheses, but some simplification is required.
+
+$$\begin{array}{rl}
+-6(\frac{1}{4}- x) & = \\ & \\
+-6\frac{1}{4} -(-6x) & = \\ & \\
+-\frac{3}{2} + 6x\end{array}$$
+
+\end{example}
+
+In both of these examples, only a constant was being distributed, but the distributive property works no matter what we're multiplying.  Most importantly, it works with groups of parentheses.
+
+\begin{example}
+
+In the following group, the entire factor $(2x + 3)$ gets multiplied by each term in the other factor.
+$$(2x + 3)(5-x) = (2x+3)5 - (2x+3)x$$
+
+From here, we have two more terms, and each of these can be simplified by distributing.
+
+$$\begin{array}{rcll}
+(2x + 3)5 & - & (2x + 3)x & = \\
+10x+15 & - & 2xx+3x & = -2x^2 + 13x + 15\end{array}$$
+\end{example}
+
+Once we have this form of quadratic, if we order the terms from highest exponent to lowest exponent, we call it a quadratic in standard form.  While we can't write every quadratic in factored form (yet), we can always express them in standard form.
+
+\subsection*{Vertex Form}
+
+This form of a quadratic is most closely related to the point-slope form of a line.  Just as with linear functions, switching between the various forms of quadratics can give you different pieces of important information.
+
+
+\begin{defn}[Vertex]\label{Vertex}
+
+A vertex is the lowermost or uppermost point of a parabola.
+\end{defn}
+
+To understand vertex form, we first elaborate on the simplest quadratic: $x^2$.  Its vertex will be at the point $(0,0)$. We call this simplest quadratic the parent function, because by manipulating it we can find the equations for many other parabolas. 
+
+When thinking about every point as $(x, f(x))$, if we want to move the vertex to the left or the right, we change the $x$-value.  If we want to move the vertex up or down, we change the $f(x)$ value.  Thus, any point where the graph has been moved to the right by $h$ and up by $k$ will be $(x + h, f(x) + k)$.  However, we only want our inputs to be $x$'s, so, adjusting all $x$'s appropriately, $(x, f(x-h)+k)$.
+
+If we also allow the graph to be stretched, we can easily account for this in vertex form.  $$a(x-h)^2 + k$$
+
+\begin{presentation}
+\begin{example}
+
+We want to find a quadratic with its vertex at the point $(1,2)$.
+
+First, we look at the parent function, $f(x) = x^2$.  If all points on it are expressed $(x, f(x))$, the vertex is normally at $(0,0)$.  If we want the vertex to be at $(1,2)$, we have to move over one, and up by two.  Thus, our new points will be $(x, f(x-1)+2)$, making our new function $g(x) = (x-1)^2 + 2$.
+
+This is then a quadratic with a vertex at the point $(1,2)$.
+
+\end{example}
+\end{presentation}
+
+\section*{Factoring Quadratics}
+
+If you're looking at a quadratic in standard form, but you want to know the roots, it is very useful to put it into factored form.  We do this by considering what linear terms we would have to distribute in order to achieve a particular standard form.
+
+\begin{example}
+
+When we look at the following quadratic in standard form, we take note of a few things.
+
+$$x^2 + 5x + 6$$
+
+First, if we were to write it as $(x + a)(x + b)$, we know that $a$ and $b$ would have to multiply together to give 6.  We also know that $ax + bx = 5x$.  So now our job is to figure out what $a$ and $b$ are.  We can start by listing everything that we can that will multiply to get 6.
+
+\bigskip
+1 and 6
+
+2 and 3
+
+\bigskip
+If we add 1 and 6, we get 7.  If we add 2 and 3, we get 5.  Since we needed $a$ and $b$ to add up to 5, we know that our factored form is $(x + 2)(x + 3)$.  We can always check this by distributing. 
+
+\end{example}
+
+\begin{example}
+
+If we want to factor $x^2 +x - 6$, we have something new to consider.  We need numbers which will multiply to give us 6, but now we can use either positive or negative numbers.
+
+\bigskip
+1 and -6
+
+-1 and 6
+
+2 and -3
+
+-2 and 3
+
+\bigskip
+Since $x$ has a coefficient of +1, here, we can see that the factored form must be $(x+3)(x + -2)$.  We then simplify this to $(x+3)(x - 2)$
+
+\end{example}
+
+\newpage
+
+\section*{Solving Quadratic Equations}
+
+A quadratic equation is any equation with a quadratic expression in it.  Sounds reasonable enough!
+
+\begin{example}
+$x^2 - 2x + 1 = 4$ is a quadratic equation.  By graphing the quadratic expression, we can see that it equals 4 when $x = -1$ and when $x = 3$.
+
+\end{example}
+
+
+This is a rather crude way to see the solutions, so we want to use algebra if we can.  We can do this with either factoring or putting the expression in vertex form.  The latter is the most consistently successful method, but we will begin by demonstrating factoring.
+
+We want to find solutions to the following equation,
+
+$$x^2 - 3x - 4 = - 6.$$
+
+A common mistake is to factor this expression without a goal in mind.  The reason factoring a quadratic is useful is because it is easy to find where the expression equals zero.  If we factor the left side of the equation now, we would have to figure out where it equals -6, which is not nearly so easy.  Before factoring, we should make sure the right side is zero so that we get the information we want.
+
+$$x^2 - 3x + 2 = 0$$
+
+We have a new quadratic expression on the left side, and if it were in factored form, it would then be easy to find solutions for $x$.  Now we need two numbers we can multiply to get 2, but add to get -3.  Since -1 and -2 are the only valid choices, we can change to the factored form.
+
+$$(x-1)(x-2) = 0$$
+
+And we know this will only be true when $x = 1$ or $x = 2$, so 1 and 2 are our solutions to this quadratic equation.
+
+\begin{figure*}[h]
+\begin{center}
+\resizebox{10cm}{8cm}{
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-2.5,0.) -- (5.5,0.);
+\foreach \x in {-2.,-1.,1.,2.,3.,4.,5.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-1.5) -- (0.,5.5);
+\foreach \y in {-1.,1.,2.,3.,4.,5.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-2.5,-1.5) rectangle (5.5,5.5);
+\draw [samples=50,rotate around={0.:(1.5,-0.25)},xshift=1.5cm,yshift=-0.25cm,color=ffqqqq,domain=-4.0:4.0)] plot (\x,{(\x)^2/2/0.5});
+\begin{scriptsize}
+\draw[color=ffqqqq] (1.467987992635516,0.8706471877917247) node {$y = x² - 3x + 2$};
+\draw [fill=qqttcc] (1.,0.) circle (1.5pt);
+\draw[color=qqttcc] (1.1087871530206685,0.2121123151645069) node {$A$};
+\draw [fill=qqttcc] (2.,0.) circle (1.5pt);
+\draw[color=qqttcc] (2.1115561636121174,0.2121123151645069) node {$B$};
+\end{scriptsize}
+\end{tikzpicture}}
+\caption{The graph of the function $y=x^2-3x-4$, which indeed shows us the roots are $x=1$ and $x=2$.}
+\end{center}
+\end{figure*}
+
+
+\begin{example}
+Solve the quadratic equation by factoring.
+$$(x - 5)(x + 1) = -8$$
+
+You may have noticed: the quadratic expression is already factored.  However, the factored form being equal to -8 isn't the simplest to find.  We need a different expression that's equal to zero before factoring gets us anything useful.  We'll put it into standard form first and see where that gets us.
+
+$$\begin{array}{rcl}
+(x - 5)(x + 1) & = & -8 \\
+x(x+1) - 5(x+1) & = & -8 \\
+x^2 + x - 5x - 5 & = & -8 \\
+x^2 - 4x - 5 & = & -8
+\end{array}$$
+
+Great!  Now that we're here, we can do what we did last time.  We need a quadratic expression equal to zero, and then we can factor it and get information that helps us.
+
+$$\begin{array}{rcl}
+x^2 - 4x - 5 & = & -8 \\
+x^2 - 4x + 3 & = & 0 \\
+(x - 1)(x - 3) & = & 0 \\
+\end{array}$$
+
+Now we can clearly see that our solutions are 1 and 3.
+
+\end{example}
+
+If we need to find a solution with a quadratic in vertex form, we want to solve for the squared expression first, and then we can worry about $x$.
+
+If we have
+$$\frac{1}{4}(x - 1)^2 - 4 = 0$$
+
+We want to use inverse operations to undo everything that's been done to the $x$, in the reverse order.
+
+$$\begin{array}{rcl}
+\frac{1}{4}(x - 1)^2 - 4 & =& 0\\
+\frac{1}{4}(x - 1)^2 & =& 4 \\
+(x - 1)^2 & =& 16 \\
+x - 1 & =& 4 \text{ or } -4\\
+x & = & 5 \text{ or } -3\\
+\end{array}$$
+
+Thus, we have 5 and -3 as solutions.  Because we don't want a bunch of `or's in our equations, there's a symbol for representing positive or negative values: $\pm$.  $\pm4$ means either +4 or -4.  It's important to remember that, when taking the square root of an expression, the result can be either positive or negative.
+
+\begin{example}
+Find solutions to
+$$x^2 - 10x + 10 = 0$$
+
+First, we find the vertex.  We know that whatever $h$ is will give us the term $-10x$ when we distribute $(x - h)^2$, so $h = 5$.  Now, to find $k$, 
+
+$$\begin{array}{rcl}
+x^2 - 10x + 10  & = & (x - 5)^2 + k\\
+x^2 - 10x + 10  & = & x^2 - 10x + 25 + k \\ 
+10  & = & 25 + k \\ 
+-15  & = & k
+\end{array}$$
+
+Now that we know what the vertex form of this quadratic will look like, we can begin solving for $x$.
+
+$$\begin{array}{rcl}
+(x - 5)^2 - 15 & = & 0 \\
+(x - 5)^2 & = & 15 \\
+x - 5 & = & \pm \sqrt{15} \\
+x & = & \pm \sqrt{15} + 5\\
+\end{array}$$
+
+Since 15 is not a perfect square, we usually leave our answers in this form since it is more exact.  We could also find decimal approximations, but they are more difficult to work with since we won't be able to go backward.  We write our solutions as a list as usual:
+
+$5 + \sqrt{15}$, 
+
+$5 - \sqrt{15}$
+
+\end{example}

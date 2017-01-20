@@ -1,0 +1,57 @@
+\documentclass{book}
+
+
+\include{bookstructure}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\thispagestyle{empty}
+\pagenumbering{gobble}
+
+\noindent
+\begin{pspicture}(0,13.5)(\linewidth,0)
+  \psline[linewidth=3mm,linecolor=OliveGreen](0,13.5)(\linewidth,13.5)
+  \rput(\linewidth,13.5)
+    {\pspolygon*(-3.6,0)(-1.4,0)(0,-1.4)(0,-3.6)}
+  \rput(\linewidth,13.5)
+    {\rput{-45}(-1,-1){\Large\textbf{\white Fall}}}
+  \rput(\linewidth,13.5)
+    {\rput{-45}(-1.5,-1.5){\Large\textbf{\white 2016}}}
+
+  \rput[l](0,3.7){\textsl{\huge (And Some Other Functions)}}
+  \psline[linewidth=3mm,linecolor=OliveGreen](0,3)(\linewidth,3)
+  \psline[linewidth=3mm,linecolor=OliveGreen](0,0)(\linewidth,0)
+  \rput[b](.8\linewidth,3cm)
+    {\includegraphics[height=0.3\textheight]{hedgehog.png}}
+  \rput[l](0,1.5){\psscaleboxto(\textwidth,2){The Truth About Lines}}
+\end{pspicture}
+
+
+
+
+
+\include{howto}
+
+\large
+\pagenumbering{arabic}
+
+
+\include{review}
+
+\include{functions}
+
+\include{linearfunc}
+
+\include{quadratics}
+%\include{exercises}
+
+
+\include{rationalexpr}
+
+\include{definitions}
+
+\theendnotes
+
+\end{document}

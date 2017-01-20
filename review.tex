@@ -1,0 +1,305 @@
+\chapter{Operations, Expressions, and Equations}
+
+
+
+%Numbers come in a lot of different forms. We all know that 2 is a number. Many of us have seen $\pi$ in some capacity and recognize that it is a number. In a similar manner, you may know that $\sqrt{9001}$ and $3i + 17$ are numbers. But without understanding what these numbers mean, they are worthless. The first step in our journey towards establishing meaning for numbers starts with classification of these numbers.
+
+%\begin{presentation}
+%\begin{defn}[Number Set]\label{defn1}
+%	A number set is a collection of numbers.
+%\end{defn}
+%\end{presentation} \index{Number Set}
+
+%First definition down. This is a small, but significant definition as well. Number sets will be a recurring character throughout this book. 
+
+%\begin{defn}[Natural Number]\label{defn2}
+%	A number is called natural if we can use it to count. We denote the set of natural numbers as $\mathbb{N}$. \\ $1,2,3,4,$ and $5$ are examples natural numbers.
+%\end{defn}
+
+%We use natural numbers every single day. However, there are some quantities that we cannot describe using natural numbers. Enter the integers.
+
+%\begin{presentation}
+
+%\end{presentation}
+
+%We can use number lines to plot integers.
+
+%\vspace{2cm}
+
+%\numline
+
+
+
+
+
+
+
+
+
+ %Integers are also where we introduce mathematical operations. 
+
+Our goal this semester is to have a strong understanding of both linear and quadratic functions. Before we dive in, let's review some of the tools we are going to use all semester. 
+\begin{presentation}
+\begin{defn}[Variable]
+	A variable is a representation for an unknown quantity. We traditionally use letters as variables. 
+\end{defn}
+\end{presentation}
+
+Outside of math, the word variable is defined as ``apt or liable to vary or change''.\footnote{\texttt{www.dictionary.com}} Within math it really means the same thing. We use variables for unknown quantities or changing quantities because it makes understanding functions way easier. These are going to be our most frequently used tool this semester. 
+
+\begin{center}
+\includegraphics[scale=.75]{variable.png}
+\end{center}
+
+\begin{defn}[Expression]
+	An expression is an arrangement of symbols with some syntax. In other words, an expression is a combination of numbers and variables that adhere to some set of rules. 
+\end{defn}
+
+Wow, that definition is almost no use to us. What it is trying to say is that an expression is some combination of numbers, variables (which represent numbers), and operations. 
+
+\begin{defn}[Elementary Operation]
+An operation is a calculation that is done using some combination of numbers. The four elementary operations are addition (+), subtraction (-), multiplication ( $\cdot$ or $\times$), and division ($\div$ or $/$ ).
+\end{defn}
+
+%The addition of two numbers is the combination of the two quantities. We can represent this operation on a number line.
+%\begin{example}[Addition on a Number Line]
+%	To visualize addition on a number line, start by plotting the first number on the number line. Consider $3+-6$.
+%	
+%	\begin{center}
+%	\begin{tikzpicture}
+%	\draw[latex-] (-6.5,0) -- (6.5,0) ;
+%	\draw[-latex] (-6.5,0) -- (6.5,0) ;
+%	\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+%	\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+%	\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5 }
+%	\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+%	{$\x$};
+%	\end{tikzpicture}
+%	\end{center}
+
+
+%	\begin{center}
+%	\begin{tikzpicture}
+%\begin{axis}[
+%  axis y line=none,
+%  axis lines=left,
+%  axis line style={-},
+%  xmin=-11,
+%  xmax=11,
+%  ymin=0,
+%  ymax=1,
+%  scatter/classes={o={mark=*}},
+%  restrict y to domain=0:1,
+%  xtick={-10,-9,-8, ...,10},
+%  width=16cm
+%]
+%\addplot table [y expr=0,meta index=1, header=false] {
+%114.06 o
+%119.94 o
+%};
+%\node[coordinate,label=above:{$L_1=114.06$}] at (axis cs:114.06,0.05) {};
+%\node[coordinate,label=above:{$L_2=119.94$}] at (axis cs:119.94,0.05) {};
+%\end{axis}
+%\end{tikzpicture}
+%	\end{center}
+
+%\end{example}
+
+These operations are the building blocks for everything else we do in math.
+\begin{defn}[Exponent]
+An exponent is a representation of the power of an expression. When dealing with positive exponents, this is a fancy way of saying the exponent is the number of times you multiply an expression by itself. The following table shows how to do this for a number $n$:
+$$
+\begin{array}{|ccl|}
+\hline 
+n^3 & = & 1 \cdot (n \cdot n \cdot n) \\
+n^2 & = & 1 \cdot (n \cdot n) \\
+n^1 & = & 1 \cdot( n )\\
+n^0 & = & 1 \\
+n^{-1} & = & 1 \div (n) \\
+n^{-2} & = & 1 \div (n \cdot n) \\
+n^{-3} & = & 1 \div (n \cdot n \cdot n)\\
+\hline
+\end{array}
+$$ 
+\end{defn}
+
+
+
+
+
+
+\begin{defn}[Fraction]
+	A fraction is a number that expresses some part of an integer. It can also be viewed as an integer divided by an integer. 
+\end{defn}
+
+The reason why a definition for a fraction is included here is because fractions tend to confuse many students. However, a fraction is simply a number dividing another number. If we try to only think of fractions as this, hopefully our confusion will be minimized. 
+
+\begin{theorem}[The Order of Operations]
+All of the expressions that we work with adhere to a system of rules that tell us how to evaluate operations. We call this set of rules the Order of Operations. When evaluating expressions we start by simplifying any operations that may be within \textbf{p}arentheses. Next, we evaluate any \textbf{e}xponents that are in the expression. After that, we perform any \textbf{m}ultiplication and \textbf{d}ivision, moving left to right. Finally, we finish evaluating our expression by \textbf{a}dding and \textbf{s}ubtracting. 
+\end{theorem}
+
+\noindent
+\textbf{Evidence:}
+
+\noindent
+In upper level math courses, we try to prove that theorems are always true, which becomes valuable for certain classes. But for our purposes, all we really want to do is convince ourselves that this makes sense. That still requires some level of evidence, however. 
+
+For this particular theorem, we are left in a strange position. The best evidence is to think of a situation where the order in which we evaluate operations makes a difference. Let's say you have 12 slices of pizza and you want to split it evenly between you and your friend. This is a simple enough expression: $12 \div 2$. However, let's say that another friend comes over and you now have to repartition the pizza for three. Our new expression cannot be read from left to right: $12 \div (2+1)$. Performing the operations in order makes a huge difference. Otherwise, you would say that each person could have 7 slices, which means someone was going to be hungry. This example may seem silly, because obviously you would split the pizza evenly 3 ways rather than $2+1$ ways, however it does capture why the order of operations is so important to get right. The more operations involved, the more the order becomes important. 
+
+\begin{defn}[Equation]
+An equation is a relationship between expressions which states that the expressions have the same value. We call the two expressions equivalent. 	
+\end{defn}
+
+This is where we begin to actually solve for variables, much like we would try to solve some puzzle. In fact, that is pretty much what we are doing when we are solving equations. We use the relationship that is given to find the possible solutions for the variables. 
+
+\begin{example}[Solving Equations with One Variable]
+Consider the equation $x+5=10$. This is saying that the two sides of the equation have the same value. If we wanted to say this equation as a verbal sentence, we would say ``$x$ plus 5 is the same as 10." Without using any procedures that you might remember from previous math classes, can you figure out what $x$ must be? 
+\end{example}
+
+Attempting to think critically about these equations when we try to solve them is the key to success. Thinking about each side as expressions with the same value hopefully helps. However, when we have more numbers and operations involved, it becomes tougher for us to visualize the solution or do mental math. Therefore, our most frequent tool we use when we are solving equations is the inverse operation.
+
+\begin{theorem}[Inverse Operation]
+All the operations we will be dealing with this semester have an inverse operation that will undo the original operation. Multiplication and Division are inverse operations. Addition and Subtraction are inverse operations. 	
+\end{theorem}
+
+\noindent
+\textbf{Evidence:}
+
+\noindent
+To convince ourselves that inverse operations do in fact work, lets perform some quick checks:
+
+\begin{center}
+First off, we can take a number and multiply by five, then divide by five.
+$$
+\begin{array}{rcl}
+2 \cdot 5 \div 5 &=& 2\\
+\end{array}
+$$
+Let's try division first. Take a random number, divide by 3, then multiply by 3. 
+$$
+\begin{array}{rcl}
+12 \div 3 \cdot 3 & = & 12 \\ 
+\end{array}
+$$
+Now let's try with addition and subtraction.
+$$
+\begin{array}{rcl}
+1+5 -5 & = & 1
+\end{array}
+$$
+\end{center}
+
+So far, this passes the sniff test. If you feel like you need more evidence, choose any number, multiply it by a second number and the divide it by the second number again. You will end up with the original number. 
+
+After one variable, comes two variables (yeah!). With two variables, our job actually becomes easier in some ways. There is no longer a single solution for the variables. In fact, usually there are an infinite amount of solutions. 
+
+\pagebreak 
+
+\begin{example}[Solving Equations with Two Variables]
+When we have two variables, 	we end up having more than one solution. In our equation from above ($x+5=10$), the only solution that worked is $x=5$. However, if we were to change the equation ever so slightly, it would change the relationship. Consider $x +5 =y$. No longer do we have a single solution. $x=5$ still works, and in that case $y=10$. However, we could choose any value we wanted for $x$ and we would still find a solution for $y$. When we have two variables like this, and the variables are not raised to any power, we say that the relationship is linear. Thus, we meet our first linear equation of the semester: $x+5=y$. 
+\end{example}
+
+
+\section*{Excercises}
+\begin{exercise}
+	You've just finished a party, and you're trying to combine all of your pizzas into as few boxes as possible for your refrigerator.  It's not important what types of pizza go together as long as they fit, and they're all the same size.  You have half of a cheese pizza, two thirds of a pepperoni pizza, eleven twelfths of a pineapple and anchovy pizza, one sixth of a vegetarian supreme pizza, and one quarter of a meatball pizza.
+	
+	How many boxes will all of this pizza take?
+	
+\end{exercise}
+\bigskip
+\begin{exercise}
+	Write down the following as an equation, and then solve: four times the sum of a number and three is eight.
+\end{exercise}
+\bigskip
+\begin{exercise}
+	Write down the following as an equation, and then solve: one fourth of a number together with two and one half is five.
+\end{exercise}
+\bigskip
+\begin{exercise}
+	Write down the following as an equation, and then solve: eight minus a number is two squared.
+\end{exercise}
+\bigskip
+\begin{exercise}
+	Find an equivalent expression.  $3(x-y)$
+\end{exercise}
+\bigskip
+\begin{exercise}
+	Find an equivalent expression.  $2(2x - 2(x - 2))$
+\end{exercise}
+\bigskip
+\begin{exercise}
+	Simplify:
+	
+	$$\frac{2(3-1)-7}{18-(20-5)}$$
+\end{exercise}
+\bigskip
+\begin{exercise}
+	Simplify:
+	
+	$$\frac{4}{4(3+12)-3(10+9)}$$
+\end{exercise}
+\bigskip
+\begin{exercise}
+	Simplify:
+	
+	$$\frac{2(5+2)}{3} + \frac{4-5}{3(3-4)}$$
+\end{exercise}
+\bigskip
+\begin{exercise}
+A cookie recipe makes 18 cookies.  It calls for $\frac{3}{4}$ cup of butter.  If you only want to make 6 cookies, how many cups of butter will you need for the recipe?
+\end{exercise}
+\bigskip
+\begin{exercise}
+On your to-do list, you have tasks that take a quarter hour, half an hour, an hour and a half, and another half an hour.  How much time will it take to complete your to-do list?  Convert all of these times to minutes to check your answer.
+\end{exercise}
+\bigskip
+\begin{exercise}
+The sapling in my front yard grows about three quarters of an inch per month (30 days).  How much will it grow in 5 days?
+\end{exercise}
+\bigskip
+\begin{exercise}
+In a class of 40 students, there are enough pencils for each student to have three.  How many pencils could each student have in a class of 24?
+\end{exercise}
+\bigskip
+\begin{exercise}
+Solve for $x$.
+$2(x-1)+x = 3$
+\end{exercise}
+\bigskip
+\begin{exercise}
+Solve for $x$.
+$10(5x+4) = -60$
+\end{exercise}
+\bigskip
+\begin{exercise}
+Solve for $x$.
+$5x + 1 = -2(5-x)$
+\end{exercise}
+\bigskip
+
+\begin{exercise}
+You're deciding between two vehicles to buy based on the monthly cost for driving them.  Vehicle A gets 22 miles to the gallon, and insurance is \$60 per month.  Vehicle B gets 32 miles to the gallon, and insurance is \$90 per month.
+
+If we assume gas is always \$2 per gallon, if you drive 500 miles per month, which vehicle will be cheaper?
+
+How many miles would you have to drive before the monthly cost of the two vehicles is the same?
+\end{exercise}
+\bigskip
+
+\begin{exercise}
+You're considering getting a Netflix subscription.  You're primarily concerned with watching movies, so the main competitor for your purposes is Redbox.  A Netflix subscription is \$10 per month.  Each Redbox rental is \$1 per movie.
+
+How many movies would you have to watch per month for Netflix to be the better deal?
+\end{exercise}
+\bigskip
+
+\begin{exercise}
+We have 45 meetings for this class this semester.  If we had some bad weather and had to miss 5 days of class, how much longer would we have to make each day so that you got your money's worth?
+\end{exercise}
+\bigskip
+
+\begin{exercise}
+You're writing four versions of a test as well as a quiz for your class.  Each test will have 10 multiple-choice questions, and the quiz will have one.  How many multiple-choice questions will you have to create?
+\end{exercise}
+\bigskip
