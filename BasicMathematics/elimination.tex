@@ -1,0 +1,151 @@
+\section{Elimination}
+
+There's yet another strategy for solving systems of linear equations.  This strategy is based on a similar idea as the one the substitution strategy is based on.  Both sides of an equation are equal, and can be replaced with the other.  Consider the following linear system.
+
+$$\begin{array}{rcl}
+y - x & = & 4 \\
+y + x & = & 2\end{array}$$
+
+From the second unit, we learned that, as long as we add the same thing to both sides, the equation will still be equivalent.  For this strategy, we want to take advantage of the fact that each side of the first equation has the same value.  If we think of the equations as balanced scales, we can think of our next step as taking everything off of the second scale and putting it on the appropriate sides of the first scale.
+
+$$\begin{array}{rcl}
+y - x & = & 4 \\
+y - x + (y + x) & = & 4 + (2)
+\end{array}$$
+
+The stuff in parentheses comes from the second equation.  At this point, we just want to simplify and see what happens.
+
+$$\begin{array}{rcl}
+y - x + (y + x) & = & 4 + (2)\\
+y - x + y + x & = & 6\\
+2y + 0x & = & 6\\
+2y = 6
+y = 3 \end{array}$$
+
+What happened?
+
+When we took everything from the second equation and put it on the first, we ended up with an equation that has a solution where both of our previous equations had solutions.  Since this value only has a $y$-value and no $x$-value, we have the beginning of a solution!  Let's put that $y$-value in and see what $x$ is.
+
+$$
+\begin{array}{rcl}
+y - x & = & 4 \\
+3 - x & = & 4 \\
+3 & = & 4 + x \\
+-1 & = & x \end{array}$$
+
+With a value $y$ and $x$, we have a complete solution.  We call this the Elimination Method because the hope is that, when we add the equations together, one of the variables will cancel or be eliminated, leaving us with a linear equation with only one variable.  This worked out for us this time because one equation had a positive $x$, and the other equation had a negative $x$.  If we have more $x$'s in one equation than the other, we'll have some positive or negative $x$'s left over.  In order to make them cancel, we sometimes have to find an equivalent equation.
+
+\begin{example}
+Solve the following linear system using the elimination method.
+
+$$\begin{array}{rcl}
+y + 2x & = & -2\\
+-2y - x & = & 3 \end{array}$$
+
+If we take the second equation and add it to the first equation now, we'll still have an equation with two variables.
+
+$$\begin{array}{rcl}
+y + 2x + (-2y - x) & = & -2 + (3)\\
+y + 2x - 2y - x & = & 1\\
+-y + x & = & 1 \end{array}$$
+
+Like before, we ended up with an equation that has a solution where both of our previous equations had solutions. Unfortunately, it still has two variables, so we can't make any conclusions about it yet.  Let's take a look at the first two equations again.  Notice that the second equation has only one negative $x$, while the first equation has two.  We want to take advantage of equivalent equations.  If we want an equation equivalent to the second equation, but which has two negative $x$'s, we can multiply both sides by 2. Then, the system
+
+$$\begin{array}{rcl}
+y + 2x & = & -2\\
+-2y - x & = & 3 \end{array}$$
+
+becomes
+
+$$\begin{array}{rcl}
+y + 2x & = & -2\\
+-4y - 2x & = & 6 \end{array}$$
+
+Because the equations we have are equivalent to the previous equations, the linear system is also equivalent; it will have all of the same solutions.  Let's try adding the equations again.
+
+$$\begin{array}{rcl}
+y + 2x + (-4y - 2x) & = & -2 + (6) \\
+y + 2x -4y -2x & = & 4 \\
+-3y & = & 4 \\
+y & = & -\frac{4}{3}
+\end{array}$$
+
+Perfect.  We eliminated one of the variables according to plan.  We know that our solution has a $y$-value of $-\frac{4}{3}$.  We can work on finding $x$ now.  This will be easier if we start with the second equation, so we don't have to divide at the end.
+
+$$\begin{array}{rcl}
+-2y - x & = & 3 \\
+-2\times \left(-\frac{4}{3}\right) - x & = & 3 \\
+\frac{8}{3} - x & = & 3 \\
+\frac{8}{3} & = & 3 + x \\
+\frac{8}{3} - 3 & = & x \\
+\frac{8}{3} - \frac{9}{3} & = & x \\
+-\frac{1}{3} & = & x \end{array}$$
+
+With values for $x$ and $y$, we can now say that we have a solution.
+\end{example}
+
+We're going to do one more example, but there's going to be a twist to it.
+
+\begin{example}
+Solve the system of linear equations.
+
+$$\begin{array}{c}
+y = \frac{3}{5}x - 6\\
+3y + 2x = 1 \end{array}$$
+
+The first thin we have to watch out for is the equals sign.  Remember that the strategy only works because we're taking everything off of one scale and putting it on the appropriate sides of the other scale.  We can't add straight down because the equals signs don't line up.  We have to make sure they do.
+
+$$\begin{array}{rcl}
+y & = & \frac{3}{5}x - 6\\
+3y + 2x & = & 1 \end{array}$$
+
+That's better.  Now we can clearly see that we need to move the $\frac{3}{5}x$ term to the other side of the first equation.
+
+$$\begin{array}{rcl}
+y - \frac{3}{5}x & = & -6\\
+3y + 2x & = & 1 \end{array}$$
+
+Now we're in a weird spot.  It looks like we would have to multiply one of the equations by a fraction in order to get the $x$'s to cancel.  Finding that fraction can sometimes take valuable time.  What we're going to do is take advantage of equivalent equations again, and we're going to fix both of the equations.  We'll look at the coefficient of the $x$ in the first equation, and multiply the second equation by it.  Then we'll look at the coefficient of $x$ in the second equation and multiple by first equation by it.  This way, the $x$'s in both equations will be multiplied by both coefficients, and this should make them cancel.
+
+
+$$\begin{array}{rcl}
+y - \frac{3}{5}x & = & -6\\
+3y + 2x & = & 1\\ \\
+y - \frac{3}{5}x & = & -6\\
+\frac{3}{5}\times 3y + \frac{3}{5}\times 2x & = & \frac{3}{5}\times 1\\ \\
+y - \frac{3}{5}x & = & -6\\
+\frac{9}{5}y + \frac{6}{5}x & = & \frac{3}{5}\\ \\
+2y - 2\times \frac{3}{5}x & = & 2\times (-6)\\
+\frac{9}{5}y + \frac{6}{5}x & = & \frac{3}{5}\\ \\
+2y - \frac{6}{5}x & = & -12 \\
+\frac{9}{5}y + \frac{6}{5}x & = & \frac{3}{5} \end{array}$$
+
+And now, when we add the equations together, the $x$'s will cancel.
+
+$$\begin{array}{rcl}
+2y - \frac{6}{5}x + (\frac{9}{5}y + \frac{6}{5}x) & = & -12 + (\frac{3}{5}) \\
+2y - \frac{6}{5}x + \frac{9}{5}y + \frac{6}{5}x & = & -\frac{60}{5} + \frac{3}{5} \\
+2y + \frac{9}{5}y & = & -\frac{57}{5} \\
+\frac{10}{5}y + \frac{9}{5}y & = & -\frac{57}{5} \\
+\frac{19}{5}y & = & -\frac{57}{5} \\
+y & = & -\frac{57}{5} \div \frac{19}{5}\\
+y & = & -3
+\end{array}$$
+
+We have a $y$-value.  What's missing?
+
+$$\begin{array}{rcl}
+3y + 2x & = & 1\\
+3 \times -3 + 2x & = & 1 \\
+2x & = & 10 \\
+x & = & 5 \end{array}$$
+
+This tells us that our solution is $(5,-3)$.
+\end{example}
+
+As we can see, some problems are more well-suited for elimination than others.
+
+\begin{prblm}
+Would it be easier to solve this problem with the graphing, substitution, or elimination strategies?
+How would you be able to tell before trying any of them?
+\end{prblm}

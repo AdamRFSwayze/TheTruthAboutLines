@@ -1,0 +1,6 @@
+\contentsline {chapter}{\numberline {1}Operations}{}{chapter.1}
+\contentsline {section}{Exercises}{}{section*.2}
+\contentsline {section}{Problems}{}{section*.3}
+\contentsline {section}{bangus}{}{section*.4}
+\contentsline {chapter}{\numberline {2}Functions}{}{chapter.2}
+\contentsfinish 

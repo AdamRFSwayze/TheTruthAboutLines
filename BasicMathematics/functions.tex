@@ -1,0 +1,164 @@
+\chapter{Functions}
+
+\begin{defn}[Function]
+A function is the relation between a set of inputs and a set of outputs with the property that each input is related to exactly one output. In other words, a function takes  an input value and gives a corresponding output. We denote function $f$ evaluated for a certain $x$ as $f(x)$.
+\end{defn}
+
+You have probably seen many functions in previous math classes. Below is a visualization of a function $f$.
+
+
+%function diagram
+
+\begin{center}
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+    
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+    \node [block] (function) {$f$};
+    \node [cloud, left of=function] (input) {$x$};
+    \node [cloud, right of=function] (output) {$f(x)$};
+    % Draw edges
+    \path [line,dashed] (input) -- (function);
+    \path [line,dashed] (function) -- (output);
+\end{tikzpicture}
+\end{center}
+
+In this diagram, $x$ on the left is our input and the $f(x)$ on the right is the output. We can think of $f(x)$ as the function $f$ applied to $x$. Now let's look at a particular function. Let's allow the function $d$ to double any input. Now we have this diagram:
+
+\begin{center}
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+    \node [block] (function) {$d$};
+    \node [cloud, left of=function] (input) {$1$};
+    \node [cloud, right of=function] (output) {$2$};
+    % Draw edges
+    \path [line,dashed] (input) -- (function);
+    \path [line,dashed] (function) -- (output);
+\end{tikzpicture}
+\end{center}
+
+\noindent
+Our new function $d$ takes the input of 1 and gives an output of 2. In other words, the function $d$ doubled our input of 1.
+\begin{presentation}
+	\begin{defn}[Domain]
+		The domain of a function is the set of all possible inputs for that function.
+	\end{defn}
+\end{presentation}
+
+The domain of a function is just a fancy way of saying anything we can put into the function and have the function still work. Consider a paper shredder. If we were to consider this a function, the domain would be paper, credit cards, and late homework. 
+\begin{defn}[Range]
+	The range of a function is the set of all possible outputs for that function.
+\end{defn}
+
+Let's think back to the paper shredder. If the domain of the paper shredder function was paper, credit cards, and late homework, what would be in the range? In other words, what are our possible outputs? In the case of the paper shredder finding the domain and range are fairly easy since the paper shredder turns all inputs into shredded versions of themselves. However, most of the time this semester, we will be dealing with mathematical functions that have some effect on numerical inputs. The doubling function $d$ is a classic example of this. 
+
+\begin{prblm}[Expressing a function as an equation]
+Using the definition of an equation and your knowledge of the doubling function discussed above, express the function $d$ as an equation. \vspace{4cm}
+\end{prblm}
+
+Expressing a function as an equation is going to be the most common way that we look at functions this semester, but not the only way. Sometimes it may be easier to look at and analyze a function using a table of values. 
+
+\begin{presentation}
+\begin{exmpl}[Expressing a function using a table of values]
+	Think back to the paper shredder function. If wanted to express this function using a table of values, it would like like the following.
+\begin{center}
+\textbf{Paper Shredder Function} \\
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{input} & paper & credit card & late homework \\
+\hline
+\textbf{output} & shredded paper & shredded plastic & lower grade \\	
+\hline
+\end{tabular}
+\end{center}
+
+\noindent
+ These tables of values become even more useful when dealing with a function that has numerical values. Consider the doubling function $d$.
+
+\begin{center}
+
+\textbf{The Doubling Function} \\
+$
+\begin{array}{|c|c|c|c|c|c|}
+ \hline
+ \bm{x} & 1 & 2 & 3 & 4 & 5 \\
+ \hline
+ \bm{d(x)} & 2 & 4 & 6 & 8 & 10 \\
+ \hline
+\end{array}
+$
+\end{center}
+
+\noindent
+In some situations, this is the only format in which a function is given to us. Therefore, both reading accurately and creating these tables are important tools for moving forward with functions. 
+\end{exmpl}
+\end{presentation}
+
+The last major format that functions come in is graphically. 
+
+\pagebreak 
+
+\begin{defn}[Cartesian Plane]
+	The Cartesian Plane is a plane (meaning it's flat) made up of an \color{blue}$x$-axis (the horizontal line) \color{black} and a \color{red} $y$-axis (the vertical line). \color{black}
+	\begin{center}
+	\begin{tikzpicture}
+	\begin{axis}[width=12cm, ymax=10, ymin=-10, xmax=10, xmin=-10, axis lines=middle, grid=major, myaxis, xticklabel style= {font=\tiny, yshift=0.5ex}, yticklabel style={font=\tiny, xshift=0.5ex},xtick={-10,...,10}, ytick={-10,...,10}	]
+	\end{axis}
+	\end{tikzpicture}
+	\end{center}
+\end{defn}
+
+\begin{exmpl}[Expressing a function using a graph]
+Sometimes functions are expressed on the Cartesian Plane. We can use these representation to gather the same information we can get from the others. 
+\begin{center}
+\begin{tikzpicture}
+	\begin{axis}[width=12cm, ymax=10, ymin=-10, xmax=10, xmin=-10, axis lines=middle, grid=major, myaxis, xticklabel style= {font=\tiny, yshift=0.5ex}, yticklabel style={font=\tiny, xshift=0.5ex},xtick={-10,...,10}, ytick={-10,...,10}]
+	\addplot+[smooth] coordinates {(-2,-8) (-1,-1) (0,0) (1,1) (2,8)};
+	\end{axis}
+\end{tikzpicture}
+\end{center}
+
+This function is the cubic $(x^3)$ function, restricted to the domain -2 to 2. 
+
+
+\end{exmpl}
+
+\begin{defn}[Intercepts]
+	An intercept of a function is a point where the function crosses (or intercepts) any axes. A function can have multiple intercepts.
+\end{defn}
+
+\begin{center}
+\begin{tikzpicture}
+	\begin{axis}[width=12cm, ymax=10, ymin=-10, xmax=10, xmin=-10, axis lines=middle, grid=major, myaxis, xticklabel style= {font=\tiny, yshift=0.5ex}, yticklabel style={font=\tiny, xshift=0.5ex},xtick={-10,...,10}, ytick={-10,...,10}]
+	\addplot[color=red]{(x)};	
+	\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+%\begin{tikzpicture}
+%	\begin{axis}[width=10cm, ymax=10, ymin=-10, xmin=-10, xmax= 10, axis lines=middle, grid=major, myaxis, xticklabel style= {font=\tiny, yshift=0.5ex}, yticklabel style={font=\tiny, xshift=0.5ex},xtick={-10,...,10}, ytick={-10,...,10}]
+%	\addplot[color=red]{(x)};	
+%	\end{axis}
+%\end{tikzpicture}	
+
+%\begin{tikzpicture}
+%	\begin{axis}[width=18cm, ymax=10, ymin=-10, xmin=-10, xmax= 10, axis lines=middle, grid=major, myaxis,xtick={-10,...,10}, ytick={-10,...,10}]
+%	\addplot[color=red]{(x)};	
+%	\end{axis}
+%\end{tikzpicture}
+
